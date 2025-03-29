@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Почему я люблю тебя, </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Почему я люблю тебя, АЛЕКСАНДРА<3</h1>
+        <p>22 причины моей любви</p>
+    </header>
+
+    <main>
+        <div class="reason">
+            <img src="photo4.jpg" alt="Фото 1">
+            <p>Причина 22: Ты всегда поддерживаешь меня.</p>
+        </div>
+
+        <div class="reason">
+            <img src="photo1.jpg" alt="Фото 2">
+            <p>Причина 21: Твои сообщения делают мой день лучше.</p>
+        </div>
+
+        <div class="reason">
+            <img src="photo3.jpg" alt="Причина 3">
+            <p>Причина 20: Ты вдохновляешь меня быть лучше.</p>
+        </div>
+        
+        <div class="reason">
+            <img src="photo2.jpg" alt="Причина 4">
+            <p>Причина 19: С тобой я могу быть самим собой.</p>
+        </div>
+        
+        <div class="reason">
+            <img src="photo4.jpg" alt="Причина 5">
+            <p>Причина 18: Ты всегда умеешь меня рассмешить.</p>
+        </div>
+        
+        <div class="reason">
+            <img src="photo5.jpg" alt="Причина 6">
+            <p>Причина 17: Ты заботишься обо мне.</p>
+        </div>
+        
+        <div class="reason">
+            <img src="photo6.jpg" alt="Причина 7">
+            <p>Причина 16: Ты моя харесяя.</p>
+        </div>
+        
+        <div class="reason">
+            <img src="photo7.jpg" alt="Причина 8">
+            <p>Причина 15: Мне нравится проводить с тобой время.</p>
+        </div>
+        
+        <div class="reason">
+            <img src="photo8.jpg" alt="Причина 9">
+            <p>Причина 14: Ты понимаешь меня без слов.</p>
+        </div>
+        
+        <div class="reason">
+            <img src="photo9.jpg" alt="Причина 10">
+            <p>Причина 13: Ты красивая для меня внутри и снаружи.</p>
+        </div>
+        
+        <div class="reason">
+            <img src="photo10.jpg" alt="Причина 11">
+            <p>Причина 12: Ты поддерживаешь мои мечты.</p>
+        </div>
+        
+        <div class="reason">
+            <img src="photo11.jpg" alt="Причина 12">
+            <p>Причина 11: люблююююююююю</p>
+        </div>
+        
+        <div class="reason">
+            <img src="photo12.jpg" alt="Причина 13">
+            <p>Причина 10: Ты принимаешь мои недостатки.</p>
+        </div>
+        
+        <div class="reason">
+            <img src="photo13.jpg" alt="Причина 14">
+            <p>Причина 9: у тэбя сысэчки приколны.</p>
+        </div>
+        
+        <div class="reason">
+            <img src="photo14.jpg" alt="Причина 15">
+            <p>Причина 8: Ты делаешь мое существование лучше.</p>
+        </div>
+        
+        <div class="reason">
+            <img src="photo15.jpg" alt="Причина 16">
+            <p>Причина 7: Мне нравится, как ты пахнешь.</p>
+        </div>
+        
+        <div class="reason">
+            <img src="photo16.jpg" alt="Причина 17">
+            <p>Причина 6: Ты моя половинка.</p>
+        </div>
+        
+        <div class="reason">
+            <img src="photo17.jpg" alt="Причина 18">
+            <p>Причина 5: Ты умеешь слушать, хоть и кышлака но всо жэ.</p>
+        </div>
+        
+        <div class="reason">
+            <img src="photo18.jpg" alt="Причина 19">
+            <p>Причина 4: Ты всегда рядом, когда мне нужна помощь.</p>
+        </div>
+        
+        <div class="reason">
+            <img src="photo19.jpg" alt="Причина 20">
+            <p>Причина 3: С тобой мнэ приятнее кушать.</p>
+        </div>
+        
+        <div class="reason">
+            <img src="photo20.jpg" alt="Причина 21">
+            <p>Причина 2: Ты умеешь прощать.</p>
+        </div>
+
+        <div class="reason">
+            <img src="photo21.jpg" alt="Причина 22">
+            <p>Причина 1: </p>
+        </div>
+        
+        
+        
+
+    <div class="reason">
+        <img src="https://effects1.ru/gallery/Imya/Muzh/A/1-Aleksandr/sasha-17-0.png" alt="Причина 100">
+        <p> Ты — моя настоящая любовь и мое счастье! Я люблю тебя!</p>
+    </div>
+
+        
+        
+    </main>
+
+    <footer>
+        <p>С любовью, ОЛЭКСАНДЭР</p>
+    </footer>
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reason");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+    
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("show");
+                } else {
+                    reveals[i].classList.remove("show");
+                }
+            }
+        }
+    
+        window.addEventListener("scroll", reveal);
+    
+        // Вызываем функцию reveal один раз, чтобы показать первые элементы при загрузке страницы
+        reveal();
+    </script>
+    
+</body>
+</html>
